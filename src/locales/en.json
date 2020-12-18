@@ -1,0 +1,12 @@
+{
+  "message": "Hello i18n !!",
+  "navbar": {
+    "slogan": "Travel greener*",
+    "fly": "Flights",
+    "accommodation": "Accommodation",
+    "tripidea": "Trip ideas",
+    "gotreep": "Gotreep",
+    "addetablishment": "Add your etablishment",
+    "contact": "Contact-us"
+  }
+}
