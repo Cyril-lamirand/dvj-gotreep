@@ -60,6 +60,9 @@
 
 <script>
 
+// TODO : (important) Navbar Mobile à partir de 1200px de largeur
+// TODO : (optionnel) Réduire la largeur du menu DROPDOWN
+
 export default {
   name: "Navbar",
   mounted() {
