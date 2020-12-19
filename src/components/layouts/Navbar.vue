@@ -1,14 +1,14 @@
 <template>
   <div class="navbar-component fixed-top">
     <!-- DESKTOP -->
-    <b-container class="h-100">
+    <b-container class="h-100" id="navbar-gotreep-desktop">
       <b-row class="h-100">
         <b-col lg="4" xl="4">
           <b-row class="h-100">
             <b-col lg="6" xl="6" class="d-flex justify-content-center align-items-center">
-              <a href="">
+              <router-link :to="{name: 'home'}">
                 <img :src="require('@/assets/logo-gotreep.png')" class="logo-gotreep-desktop" alt=""/>
-              </a>
+              </router-link>
             </b-col>
             <b-col lg="6" xl="6" class="d-flex align-items-center">
               <span class="slogan-desktop">{{ $t('navbar.slogan') }}</span>
@@ -55,6 +55,27 @@
     </b-container>
 
     <!-- MOBILE -->
+    <b-container class="h-100" id="navbar-gotreep-mobile">
+      <b-row class="h-100">
+        <b-col cols="6" sm="6" md="6" lg="6" class="d-flex align-items-center">
+          <router-link :to="{name: 'home'}">
+            <img :src="require('@/assets/logo-gotreep.png')" class="logo-gotreep-desktop" alt=""/>
+          </router-link>
+        </b-col>
+        <b-col cols="6" sm="6" md="6" lg="6" class="d-flex flex-row-reverse align-items-center">
+          <div class="btn-gotreep-mobile d-flex justify-content-center align-items-center">
+            <span>---</span>
+          </div>
+        </b-col>
+      </b-row>
+    </b-container>
+
+    <b-container class="w-100 dropdown-mobile">
+
+      <h1>Hello</h1>
+
+    </b-container>
+
   </div>
 </template>
 
@@ -110,5 +131,31 @@ button{
 }
 
 /* MOBILE */
+
+.btn-gotreep-mobile{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #5F5F5F;
+  width: 40px;
+  height: 40px;
+}
+
+.dropdown-mobile{
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1199px) {
+  #navbar-gotreep-desktop{ display: none; }
+  #navbar-gotreep-mobile{ display: block; }
+}
+
+@media only screen and (min-width: 1200px) {
+  #navbar-gotreep-desktop{ display: block; }
+  #navbar-gotreep-mobile{ display: none; }
+}
 
 </style>
