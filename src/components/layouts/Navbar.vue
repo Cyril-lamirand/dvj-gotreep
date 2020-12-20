@@ -8,12 +8,14 @@
 
 export default {
   name: "Navbar",
+  /*
   mounted() {
     let a = document.getElementById('flag-target').parentNode
     a.removeAttribute('class')
     a.style.background = 'none'
     a.style.border = 'none'
   }
+  */
 }
 
 </script>
