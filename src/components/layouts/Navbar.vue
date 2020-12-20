@@ -11,7 +11,7 @@
               </router-link>
             </b-col>
             <b-col lg="6" xl="6" class="d-flex align-items-center">
-              <span class="slogan-desktop">{{ $t('navbar.slogan') }}</span>
+              <span class="slogan">{{ $t('navbar.slogan') }}</span>
             </b-col>
           </b-row>
         </b-col>
@@ -64,16 +64,116 @@
         </b-col>
         <b-col cols="6" sm="6" md="6" lg="6" class="d-flex flex-row-reverse align-items-center">
           <div class="btn-gotreep-mobile d-flex justify-content-center align-items-center">
-            <span>---</span>
+            <span><font-awesome-icon :icon="['fa', 'bars']" /></span>
           </div>
         </b-col>
       </b-row>
     </b-container>
 
-    <b-container class="w-100 dropdown-mobile">
-
-      <h1>Hello</h1>
-
+    <b-container fluid="true" class="w-100 dropdown-mobile">
+      <div class="text-center">
+        <span class="slogan">{{ $t('navbar.slogan') }}</span>
+      </div>
+      <b-col cols="12" class="mobile-container-link mt-3">
+        <router-link :to="{name: 'home'}" class="row h-100 navbar-mobile-link">
+          <b-col cols="3" sm="3" md="2" lg="1" class="d-flex justify-content-center align-items-center">
+            <span>Icon</span>
+          </b-col>
+          <b-col cols="9" sm="9" md="10" lg="11" class="d-flex align-items-center">
+            <span>{{ $t('navbar.fly') }}</span>
+          </b-col>
+        </router-link>
+      </b-col>
+      <b-col cols="12">
+        <hr>
+      </b-col>
+      <b-col cols="12" class="mobile-container-link">
+        <router-link :to="{name: 'home'}" class="row h-100 navbar-mobile-link">
+          <b-col cols="3" sm="3" md="2" lg="1" class="d-flex justify-content-center align-items-center">
+            <span>Icon</span>
+          </b-col>
+          <b-col cols="9" sm="9" md="10" lg="11" class="d-flex align-items-center">
+            <span>{{ $t('navbar.accommodation') }}</span>
+          </b-col>
+        </router-link>
+      </b-col>
+      <b-col cols="12">
+        <hr>
+      </b-col>
+      <b-col cols="12" class="mobile-container-link">
+        <router-link :to="{name: 'home'}" class="row h-100 navbar-mobile-link">
+          <b-col cols="3" sm="3" md="2" lg="1" class="d-flex justify-content-center align-items-center">
+            <span>Icon</span>
+          </b-col>
+          <b-col cols="9" sm="9" md="10" lg="11" class="d-flex align-items-center">
+            <span>{{ $t('navbar.tripidea') }}</span>
+          </b-col>
+        </router-link>
+      </b-col>
+      <b-col cols="12">
+        <hr>
+      </b-col>
+      <b-col cols="12" class="mobile-container-link">
+        <router-link :to="{name: 'home'}" class="row h-100 navbar-mobile-link">
+          <b-col cols="3" sm="3" md="2" lg="1" class="d-flex justify-content-center align-items-center">
+            <span>Icon</span>
+          </b-col>
+          <b-col cols="9" sm="9" md="10" lg="11" class="d-flex align-items-center">
+            <span>{{ $t('navbar.addetablishment') }}</span>
+          </b-col>
+        </router-link>
+      </b-col>
+      <b-col cols="12">
+        <hr>
+      </b-col>
+      <b-col cols="12" class="mobile-container-link">
+        <router-link :to="{name: 'home'}" class="row h-100 navbar-mobile-link">
+          <b-col cols="3" sm="3" md="2" lg="1" class="d-flex justify-content-center align-items-center">
+            <span>Icon</span>
+          </b-col>
+          <b-col cols="9" sm="9" md="10" lg="11" class="d-flex align-items-center">
+            <span>{{ $t('navbar.contact') }}</span>
+          </b-col>
+        </router-link>
+      </b-col>
+      <b-col cols="12">
+        <hr>
+      </b-col>
+      <b-col cols="12" class="mobile-container-link">
+        <router-link :to="{name: 'home'}" class="row h-100 navbar-mobile-link">
+          <b-col cols="3" sm="3" md="2" lg="1" class="d-flex justify-content-center align-items-center">
+            <span>Icon</span>
+          </b-col>
+          <b-col cols="9" sm="9" md="10" lg="11" class="d-flex align-items-center">
+            <span>{{ $t('navbar.account') }}</span>
+          </b-col>
+        </router-link>
+      </b-col>
+      <b-col cols="12">
+        <hr>
+      </b-col>
+      <b-row>
+        <b-col cols="3" class="text-center">
+          <router-link to="hello">
+            <img :src="require('@/assets/flags/fr.png')" class="flags" width="30"/>
+          </router-link>
+        </b-col>
+        <b-col cols="3" class="text-center">
+          <router-link to="hello">
+            <img :src="require('@/assets/flags/uk.png')" class="flags" width="30"/>
+          </router-link>
+        </b-col>
+        <b-col cols="3" class="text-center">
+          <router-link to="hello">
+            <img :src="require('@/assets/flags/es.png')" class="flags" width="30"/>
+          </router-link>
+        </b-col>
+        <b-col cols="3" class="text-center">
+          <router-link to="hello">
+            <img :src="require('@/assets/flags/jp.png')" class="flags" width="30"/>
+          </router-link>
+        </b-col>
+      </b-row>
     </b-container>
 
   </div>
@@ -107,11 +207,15 @@ export default {
   box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
 }
 
+.slogan{ color: #5F5F5F; font-size: 16px; }
+
+.flags{ border:1px solid #5F5F5F }
+
 /* DESKTOP */
 
 .logo-gotreep-desktop{ width: 128px; }
 
-.slogan-desktop{ color: #5F5F5F; font-size: 16px; }
+
 
 .navbar-desktop-link{
   font-size: 12px;
@@ -135,17 +239,22 @@ button{
 .btn-gotreep-mobile{
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: #5F5F5F;
   width: 40px;
   height: 40px;
+  color: #5F5F5F;
 }
 
 .dropdown-mobile{
+  height: 70vh;
   background-color: white;
   -webkit-box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
 }
+
+.mobile-container-link{ height: 30px;}
+
+.navbar-mobile-link{ color: #5F5F5F; text-transform: uppercase; letter-spacing: 1px;}
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1199px) {

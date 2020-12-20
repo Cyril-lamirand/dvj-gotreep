@@ -1,12 +1,13 @@
 {
-  "message": "Bonjour i18n !!",
+  "message": "Hello i18n !!",
   "navbar": {
-    "slogan": "Voyageons greener",
-    "fly": "Vols",
-    "accommodation": "Hébergements",
-    "tripidea": "Idée(s) de voyage",
+    "slogan": "Travel greener*",
+    "fly": "Flights",
+    "accommodation": "Accommodation",
+    "tripidea": "Trip ideas",
     "gotreep": "Gotreep",
-    "addetablishment": "Ajouter votre établissement",
-    "contact": "Contactez-nous"
+    "addetablishment": "Add your etablishment",
+    "contact": "Contact-us",
+    "account": "My Account"
   }
 }

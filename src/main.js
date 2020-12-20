@@ -7,9 +7,18 @@ import i18n from './i18n'
 Vue.config.productionTip = false
 
 import { BootstrapVue } from 'bootstrap-vue'
-Vue.use(BootstrapVue)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+Vue.use(BootstrapVue)
+
+// FontAwesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBars } from '@fortawesome/free-solid-svg-icons/faBars'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faBars)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 // Route Guard
 router.beforeEach((to, from, next) => {
