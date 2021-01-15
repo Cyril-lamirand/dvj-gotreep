@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Accommodation from "@/components/pages/Accommodation"
+import Accommodation from "@/components/desktop/pages-desktop/Accommodation"
 
 export default {
   name: "AccommodationView",

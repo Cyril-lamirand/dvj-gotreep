@@ -1,12 +1,12 @@
 <template>
   <div class="homepage-view">
-    <HelloI18n/>
     <Homepage/>
+    <HelloI18n/>
   </div>
 </template>
 
 <script>
-import Homepage from "@/components/pages/Homepage"
+import Homepage from "@/components/desktop/pages-desktop/Homepage"
 import HelloI18n from "@/components/HelloI18n"
 
 export default {

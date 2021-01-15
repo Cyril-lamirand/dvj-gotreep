@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Fly from "@/components/pages/Fly"
+import Fly from "@/components/desktop/pages-desktop/Fly"
 
 export default {
   name: "FlyView",

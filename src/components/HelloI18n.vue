@@ -1,5 +1,6 @@
 <template>
-  <p>{{ $t('hello') }}</p>
+  <div class="hello-i18n-component">
+  </div>
 </template>
 
 <script>

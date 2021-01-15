@@ -11,7 +11,7 @@ body{ margin: unset; }
 
 </style>
 <script>
-import Navbar from "@/components/layouts/Navbar"
+import Navbar from "@/components/desktop/layouts-desktop/Navbar"
 
 export default {
   components: {Navbar}

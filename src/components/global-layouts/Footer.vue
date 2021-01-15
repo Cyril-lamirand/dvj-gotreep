@@ -1,15 +1,17 @@
 <template>
-  <div class="footer-component">
+  <div class="footer-global-component">
 
   </div>
 </template>
 
 <script>
 export default {
-  name: "Footer"
+name: "Footer"
 }
 </script>
 
 <style scoped>
+
+.footer-global-component{}
 
 </style>
