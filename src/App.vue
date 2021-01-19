@@ -35,7 +35,7 @@ body{ margin: unset; }
 
 .global-website-content{ padding-top: 70px; }
 
-@media screen and (min-width: 1200px) and (orientation: landscape) {
+@media screen and (min-width: 1200px) {
   .desktop-navbar-content{ display: block; }
   .responsive-navbar-content{ display: none; }
 }

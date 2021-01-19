@@ -15,6 +15,9 @@
       <RHomepageSection5/>
     </div>
     <!-- GLOBAL -->
+    <div class="homepage-global-component">
+      <GHomepageEnd/>
+    </div>
   </div>
 </template>
 
@@ -27,10 +30,12 @@ import RHomepageSection2 from "@/components/responsive-design/responsive-pages/h
 import RHomepageSection3 from "@/components/responsive-design/responsive-pages/homepage/R-Homepage-Section-3"
 import RHomepageSection4 from "@/components/responsive-design/responsive-pages/homepage/R-Homepage-Section-4"
 import RHomepageSection5 from "@/components/responsive-design/responsive-pages/homepage/R-Homepage-Section-5"
+import GHomepageEnd from "@/components/global-design/global-pages/homepage/G-Homepage-End"
 
 export default {
   name: "HomepageView",
   components: {
+    GHomepageEnd,
     RHomepageSection1,
     RHomepageSection2,
     RHomepageSection3,

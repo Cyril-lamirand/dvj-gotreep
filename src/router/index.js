@@ -10,7 +10,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: '/en'
+    redirect: '/fr'
   },
   {
     path: '/:lang',
