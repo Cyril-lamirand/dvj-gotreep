@@ -61,15 +61,13 @@
 </template>
 
 <script>
-
 export default {
-  name: "Navbar",
-
-  mounted() {
-    this.$store.state.locale = this.$route.params.lang
-  },
+  name: "D-Navbar",
   methods: {
     currentLocale: function(value) { return this.$store.state.locale = value }
+  },
+  mounted: function() {
+    this.$store.state.locale = this.$route.params.lang
   }
 }
 
@@ -85,7 +83,6 @@ export default {
   height: 70px;
   width: 100vw;
 }
-
 .router-link{
   padding-left: 5px;
   padding-right: 5px;
@@ -93,31 +90,22 @@ export default {
   font-size: 12px;
   color:#5E5E5E;
 }
-
 .dropdown-navbar{
   width: 47px;
   margin-left: 3px;
   margin-right: 3px;
 }
-
 .flag-local-dropdown{
   width: 25px;
   height: 18px;
   border:1px solid black;
 }
-
 b-dropdown-item{
   width: 20px;
 }
-
 .logo-navbar-gotreep{
   width: 120px;
   height: 37px;
 
 }
-
-
-/* DESKTOP */
-
-
 </style>

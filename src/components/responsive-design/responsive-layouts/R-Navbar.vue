@@ -1,17 +1,15 @@
 <template>
-  <div class="accommodation-component">
+  <div class="responsive-navbar-section">
 
   </div>
 </template>
 
 <script>
 export default {
-  name: "Accommodation"
+name: "R-Navbar"
 }
 </script>
 
 <style scoped>
-
-.accommodation-component{}
 
 </style>
