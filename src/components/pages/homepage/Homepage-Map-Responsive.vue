@@ -1,12 +1,12 @@
 <template>
-  <div class="responsive-navbar-section">
+  <div class="homepage-map-responsive">
 
   </div>
 </template>
 
 <script>
 export default {
-name: "R-Navbar"
+name: "Homepage-Map-Responsive"
 }
 </script>
 

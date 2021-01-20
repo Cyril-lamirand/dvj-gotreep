@@ -1,5 +1,5 @@
 <template>
-  <div class="global-footer-component mt-5">
+  <div class="footer-component mt-5">
     <b-container class="h-100">
       <b-row class="h-100 d-flex align-items-center">
         <b-col cols="6" sm="6" md="6" lg="6" xl="6" class="text-align-left">
@@ -20,13 +20,13 @@
 
 <script>
 export default {
-  name: "G-Footer"
+name: "Footer"
 }
 </script>
 
 <style scoped>
 
-.global-footer-component{
+.footer-component{
   height: 50px;
   background-color: #F7F7F7;
 }

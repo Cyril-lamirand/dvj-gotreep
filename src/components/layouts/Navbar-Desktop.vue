@@ -62,7 +62,7 @@
 
 <script>
 export default {
-  name: "D-Navbar",
+  name: "Navbar-Desktop",
   methods: {
     currentLocale: function(value) { return this.$store.state.locale = value }
   },

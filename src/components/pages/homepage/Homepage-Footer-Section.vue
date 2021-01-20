@@ -1,5 +1,5 @@
 <template>
-  <div class="global-homepage-section-end">
+  <div class="homepage-footer-section">
     <b-container>
       <div class="text-center">
         <h2 class="h2-global-homepage-section-end pt-5 pb-2 pb-sm-2 pb-md-2 pb-lg-5 pb-xl-5">Nos <b>planteurs</b> partenaires</h2>
@@ -263,7 +263,7 @@
 
 <script>
 export default {
-  name: "G-Homepage-End"
+  name: "Homepage-Footer-Section"
 }
 </script>
 

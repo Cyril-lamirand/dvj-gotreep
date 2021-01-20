@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "D-Homepage-Section-3"
+  name: "Homepage-Map-Desktop"
 }
 </script>
 
@@ -37,13 +37,10 @@ export default {
   background-position: center;
 }
 
-.btn-desktop-homepage-section-3{
+.btn-desktop-homepage-section-3 {
   background-color: white;
   border: none;
   color: #5F5F5F;
-  border-radius: 32px
-;
+  border-radius: 32px;
 }
-
-
 </style>

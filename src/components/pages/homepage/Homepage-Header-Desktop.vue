@@ -1,5 +1,5 @@
 <template>
-  <div class="desktop-homepage-section-1">
+  <div class="homepage-header-desktop">
     <b-container fluid="true">
       <b-col cols="12" sm="12" md="12" lg="12" xl="12" class="homepage-desktop-banner" :style="{'background-image': 'url(' + require('@/assets/banner/desktop_banner_home.jpg') + ')'}">
         <div class="h-100 w-100 d-flex justify-content-center align-items-center">
@@ -45,7 +45,7 @@
 
 <script>
 export default {
-  name: "D-Homepage-Section-1"
+  name: "Homepage-Header-Desktop"
 }
 </script>
 
@@ -82,6 +82,5 @@ export default {
   text-transform: uppercase;
   color:#28BA8D;
 }
-
 
 </style>
