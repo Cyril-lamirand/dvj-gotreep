@@ -16,6 +16,9 @@
 </template>
 
 <script>
+// TODO : Homepage => Responsive : Header, Map
+
+
 import Footer from "@/components/layouts/Footer"
 import NavbarDesktop from "@/components/layouts/Navbar-Desktop"
 import NavbarResponsive from "@/components/layouts/Navbar-Responsive"
@@ -56,3 +59,4 @@ a:hover{
 .color-white{ color: white; }
 
 </style>
+
