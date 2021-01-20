@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar-responsive-component">
+  <div class="navbar-responsive-component fixed-top">
 
   </div>
 </template>
@@ -17,6 +17,6 @@ export default {
   -moz-box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
   height: 70px;
-  width: 100vw;
+  width: 100%;
 }
 </style>
