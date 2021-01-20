@@ -1,7 +1,7 @@
 <template>
   <div class="homepage-header-responsive">
     <b-container fluid="true" class="homepage-responsive-content mb-5" :style="{'background-image': 'url(' + require('@/assets/banner/responsive_banner_home.png') + ')'}">
-      <b-row class="h-100 d-flex justify-content-center align-items-center">
+      <b-row class="h-100 d-flex justify-content-center align-items-center special-case">
         <b-col cols="3" sm="3" md="3"></b-col>
         <b-col cols="6" sm="6" md="6" class="">
           <div>
@@ -70,6 +70,11 @@ export default {
   font-size: 16px;
   text-transform: uppercase;
 }
+
+.special-case{
+  margin: unset;
+}
+
 @media screen and (min-width: 991.9px) {
 
 }
