@@ -275,6 +275,7 @@ export default {
 
 .h2-global-homepage-section-end{
   color: #707070;
+  font-size: 24px;
 }
 
 .h3-global-homepage-section-end{
@@ -286,6 +287,7 @@ export default {
 
 .h4-global-homepage-section-end{
   color: #707070;
+  font-size: 20px;
 }
 
 .p-global-homepage-section-end{

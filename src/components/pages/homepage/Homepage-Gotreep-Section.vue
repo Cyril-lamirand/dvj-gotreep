@@ -36,6 +36,7 @@ export default {
   color: white;
   font-weight: bold;
   border:none;
+  font-size: 13px;
   border-radius: 32px;
 }
 
