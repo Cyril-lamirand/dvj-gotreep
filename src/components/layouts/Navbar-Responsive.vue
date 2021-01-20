@@ -3,8 +3,9 @@
     <b-container fluid="true">
       <b-row>
         <b-col cols="3" sm="3" md="3">
-          <div class="burger-responsive-navbar">
-            <font-awesome-icon :icon="['fa', 'bars']" />
+          <div class="burger-responsive-navbar" @click="contentNavbar()">
+            <font-awesome-icon v-if="this.contentStatus === false" :icon="['fa', 'bars']" />
+            <font-awesome-icon v-if="this.contentStatus === true" :icon="['fa', 'times']" />
           </div>
         </b-col>
         <b-col cols="6" sm="6" md="6">
@@ -16,14 +17,15 @@
             <span class="navbar-responsive-slogan">{{ $t('navbar.slogan') }}</span>
           </div>
         </b-col>
-        <b-col cols="3" sm="3" md="3">
+        <b-col cols="3" sm="3" md="3" class="text-align-right">
           <img :src="require('@/assets/flags/fr.png')" v-if="$store.state.locale == 'fr'" class="img-locale-navbar-reponsive"/>
           <img :src="require('@/assets/flags/uk.png')" v-else-if="$store.state.locale == 'en'" class="img-locale-navbar-reponsive"/>
           <img :src="require('@/assets/flags/es.png')" v-else-if="$store.state.locale == 'es'" class="img-locale-navbar-reponsive"/>
           <img :src="require('@/assets/flags/jp.png')" v-else-if="$store.state.locale == 'jp'" class="img-locale-navbar-reponsive"/>
-
         </b-col>
       </b-row>
+    </b-container>
+    <b-container id="content-navbar-responsive" fluid="true" class="content-navbar-homepage-responsive">
 
     </b-container>
   </div>
@@ -31,7 +33,25 @@
 
 <script>
 export default {
-  name: "Navbar-Responsive"
+  name: "Navbar-Responsive",
+  data: function() {
+    return {
+      contentStatus: false
+    }
+  },
+  methods: {
+    contentNavbar: function () {
+      const section = document.getElementById('content-navbar-responsive')
+      if (this.contentStatus === false) {
+        section.style.display = 'block'
+        this.contentStatus = true
+      }else {
+        section.style.display = 'none'
+        this.contentStatus = false
+      }
+
+    }
+  }
 }
 </script>
 
@@ -60,11 +80,21 @@ export default {
   color: #707070;
   padding-left: 15px;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .img-locale-navbar-reponsive{
   border:0.5px solid black;
   width: 40px;
   margin-top: 22px;
+  margin-right: 25px;
+}
+
+.content-navbar-homepage-responsive{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }
 </style>
