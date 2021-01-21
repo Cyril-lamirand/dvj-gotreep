@@ -108,4 +108,7 @@ b-dropdown-item{
   height: 37px;
 
 }
+@media screen and (min-width: 992.9px) and (max-width: 1199.9px) {
+  .router-link{ font-size: 10px; }
+}
 </style>

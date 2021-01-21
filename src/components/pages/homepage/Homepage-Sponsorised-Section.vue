@@ -8,7 +8,15 @@
         <h3 class="h3-section-1-sponsorised pb-3 pt-3">Hôtel éco-responsable</h3>
       </div>
       <div class="sponsorised-hotel-name text-center">
-        <h4 class="h4-desktop-homepage-section-2 pt-4">Hôtel Lagon attitude ****</h4>
+        <h4 class="h4-desktop-homepage-section-2 pt-4">
+          Hôtel Lagon Attitude
+          <span class="span-homepage-sponsorised-star">
+            <font-awesome-icon :icon="['fa', 'star']" />
+            <font-awesome-icon :icon="['fa', 'star']" />
+            <font-awesome-icon :icon="['fa', 'star']" />
+            <font-awesome-icon :icon="['fa', 'star']" />
+          </span>
+        </h4>
         <h5 class="h5-desktop-homepage-section-2 pt-2">Île Maurice</h5>
       </div>
       <img :src="require('@/assets/fake-images/square.png')" alt="" class="w-100 pr-3 pl-3 pt-4 pb-4"/>
@@ -70,6 +78,10 @@ export default {
   background-color: #8ECB82;
   color: white;
   border:none;
+}
+
+.span-homepage-sponsorised-star{
+  font-size: 12px;
 }
 
 @media screen and (max-width: 991.9px) {

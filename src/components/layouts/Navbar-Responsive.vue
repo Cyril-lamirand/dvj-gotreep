@@ -25,8 +25,41 @@
         </b-col>
       </b-row>
     </b-container>
-    <b-container id="content-navbar-responsive" fluid="true" class="content-navbar-homepage-responsive">
+    <b-container id="content-navbar-responsive" fluid="true" class="content-navbar-homepage-responsive text-center">
+      <h2 class="h2-navbar-responsive pt-4">Paramètres</h2>
+      <router-link to="/">
+        <h3 class="h3-navbar-responsive pt-2">Modifier la langue</h3>
+      </router-link>
+      <router-link to="/">
+        <h3 class="h3-navbar-responsive">Modifier la devise</h3>
+      </router-link>
 
+      <h2 class="h2-navbar-responsive pt-3">Mon compte</h2>
+      <router-link to="/">
+        <h3 class="h3-navbar-responsive pt-2">Se connecter / créer mon compte</h3>
+      </router-link>
+      <router-link to="/">
+        <h3 class="h3-navbar-responsive">Mon compte hébergeur</h3>
+      </router-link>
+
+      <router-link to="/">
+        <h2 class="h2-navbar-responsive pt-5">Vols</h2>
+      </router-link>
+      <router-link to="/">
+        <h2 class="h2-navbar-responsive pt-3">Hébergements</h2>
+      </router-link>
+      <router-link to="/">
+        <h2 class="h2-navbar-responsive pt-3">Idée de voyage</h2>
+      </router-link>
+      <router-link to="/">
+        <h2 class="h2-navbar-responsive pt-3">Gotreep</h2>
+      </router-link>
+      <router-link to="/">
+        <h2 class="h2-navbar-responsive pt-3">Ajouter un hébergement</h2>
+      </router-link>
+      <router-link to="/">
+        <h2 class="h2-navbar-responsive pt-3">Contactez-nous</h2>
+      </router-link>
     </b-container>
   </div>
 </template>
@@ -97,4 +130,17 @@ export default {
   height: 100%;
   background-color: white;
 }
+
+.h2-navbar-responsive{
+  color: #28BA8D;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.h3-navbar-responsive{
+  color: #707070;
+  font-size: 18px;
+}
+
+
 </style>
