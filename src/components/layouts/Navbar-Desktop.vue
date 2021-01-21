@@ -87,7 +87,7 @@ export default {
   padding-left: 5px;
   padding-right: 5px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
   color:#5E5E5E;
 }
 .dropdown-navbar{
@@ -109,6 +109,6 @@ b-dropdown-item{
 
 }
 @media screen and (min-width: 992.9px) and (max-width: 1199.9px) {
-  .router-link{ font-size: 10px; }
+  .router-link{ font-size: 9px; }
 }
 </style>
