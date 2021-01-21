@@ -5,7 +5,7 @@
         <b-col cols="4" class="d-flex align-items-center h-100">
           <b-row>
             <div class="pl-1 pt-1 pb-1">
-              <a href="">
+              <a href="/">
                 <img class="logo-navbar-gotreep" :src="require('@/assets/logo-gotreep.png')"/>
               </a>
             </div>
@@ -21,7 +21,7 @@
           <router-link to="/link" class="router-link">
             <span>{{ $t('navbar.accommodation') }}</span>
           </router-link>
-          <router-link to="/link" class="router-link">
+          <router-link to="/fr/trip-idea" class="router-link">
             <span>{{ $t('navbar.tripidea') }}</span>
           </router-link>
           <router-link to="/link" class="router-link">

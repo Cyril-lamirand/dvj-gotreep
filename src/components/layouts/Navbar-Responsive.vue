@@ -48,7 +48,7 @@
       <router-link to="/">
         <h2 class="h2-navbar-responsive pt-3">Hébergements</h2>
       </router-link>
-      <router-link to="/">
+      <router-link to="/trip-idea">
         <h2 class="h2-navbar-responsive pt-3">Idée de voyage</h2>
       </router-link>
       <router-link to="/">

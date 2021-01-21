@@ -4,6 +4,7 @@ import HomepageView from "@/views/HomepageView"
 import ContactView from "@/views/ContactView"
 import FlyView from "@/views/FlyView"
 import AccommodationView from "@/views/AccommodationView"
+import TripideaView from "@/views/TripideaView"
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,11 @@ const routes = [
         path: '/',
         name: 'home',
         component: HomepageView
+      },
+      {
+        path: 'trip-idea',
+        name: 'trip',
+        component: TripideaView
       },
       {
         path: 'contact-us',
